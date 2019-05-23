@@ -3,232 +3,239 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
 
 body, h1, h2, a, p, ul, li, nav, div {
-	margin: 0px;
-	padding: 0px;  
+    margin: 0px;
+    padding: 0px;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-	color: #000000;
-	background: #fff;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    color: #000000;
+    background: #fff;
 }
 
 li, ul {
-	list-style: none;
+    list-style: none;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-	display: inline-block;
-	max-width: 100%;
+    display: inline-block;
+    max-width: 100%;
 }
 
 /*GENERIC SKIN*/
 
 .bg--secondary {
- 	background: linear-gradient(180deg, #FF6143 0%, #EB3636 100%)
+    background: linear-gradient(180deg, #FF6143 0%, #EB3636 100%)
 }
 
 .content--x-small {
-	font-style: normal;
-	font-weight: 300;
-	font-size: 0.8em;
-	letter-spacing: 0.1em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
 }
 
 .content--small {
-	font-style: normal;
-	font-weight: 300;
-	font-size: 1em;
-	letter-spacing: 0.1em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.1em;
 }
 
 .content--medium {
-	font-weight: 300;
-	font-size: 1.4em;
-	letter-spacing: -0.02em;
+    font-weight: 300;
+    font-size: 1.4em;
+    letter-spacing: -0.02em;
 }
 
 .content--large {
-	font-style: normal;
-	font-weight: 300;
-	font-size: 2.55em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.55em;
 }
 
 .content--letter-spaced {
-	letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
 }
 
 .content--uppercase {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .content--dashed {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .highlight--primary {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .highlight--secondary {
-	font-weight: 700;
-	color: #FF6143;
+    font-weight: 700;
+    color: #FF6143;
 }
 
 .highlight--tertiary {
-	font-weight: 300;
-	color: #FF6143;
+    font-weight: 300;
+    color: #FF6143;
 }
 
-.btn--positive { 
-	background: #FF6143;
-	color: #fff;
-	font-weight: 300;
-	font-size: 1em;
-	text-align: center;
-	letter-spacing: 0.1em;
+.btn--positive {
+    background: #FF6143;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.1em;
 }
 
 /*GENERIC SCRUCTURE*/
 
 .wrapper {
-	max-width: 1288px;
-	margin: 0 auto;
-	padding-left: 3.4em;
-	padding-right: 3.4em;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding-left: 3.4em;
+    padding-right: 3.4em;
 }
 
 .btn--medium {
-	border-radius: 20px;
-	width: 13.35em;
-	height: 2.5em;
+    border-radius: 20px;
+    width: 13.35rem;
+    height: 2.5rem;
+    line-height: 2.4rem;
+    text-align: center;
 }
 
 /*NAV*/
 
 .nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 1.2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.2%;
 }
 
 .nav__item {
-	padding: 1.2em 0.6em;	
+    padding: 1.2em 0.6em;
 }
 
 .nav__logo {
-	flex: 1 0 auto;
-	max-width: 20%;
-	margin-left: -0.6em;
+    flex: 1 0 auto;
+    max-width: 20%;
+    margin-left: -0.6em;
 }
+
 
 /*HERO BANNER*/
 
 .banner {
-	height: 68vh;
-	display: flex;
+    height: 68vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .banner__image{
-	background-image: url("/layout/images/banner.jpg");
-	background-size: cover;
-	position: relative;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 
-.banner__decoration {
-	margin: -95px 0 0 0;
-	padding: 0 0 95px 0;
-	z-index: 1;
 }
 
 
 .banner__text {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	width: calc(50% + 0.6em);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: calc(50% + 0.6em);
 }
 
 .banner__btn {
-	margin: 30px 0 0 0;
+    margin: 30px 0 0 0;
+    border: 0;
 }
 
 
 /*PRODCUTS*/
 
 .products {
-	margin: 60px auto;
+    margin: 60px auto;
 }
 
 .products__title {
-	margin: 40px auto;
-	text-align: center;
+    margin: 40px auto;
+    text-align: center;
 }
 
 .products__container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .products__item {
-	flex: 1 1 30%;
-	padding: 20px 7px 35px 7px;
-	margin: auto 15px;
-	text-align: center;
-	box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    flex: 1 1 30%;
+    padding: 20px 7px 35px 7px;
+    margin: auto 15px;
+    text-align: center;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.products__item:hover{
+    visibility: visible;
 }
 
 .products__img {
-	height: 25rem;
-	margin-bottom: 35px;
+    visibility: visible;
+    height: 25rem;
+    margin-bottom: 35px;
 }
 
 .products__btn {
-	margin: 10px 0;
+    margin: 10px 0;
 }
 
 /*CONTACT*/
 
 .contact {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 10% 0 3% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10% 0 3% 0;
 }
 
 .contact__content {
-	color: #fff;
+    color: #fff;
 }
 
 /*FOOTER*/
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 3% 0 3% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3% 0 3% 0;
 }
 
 .footer__copyright {
-	text-align: center;
-	padding: 3% 0 3% 0;
-	border-top: 1px solid #DADADA;
-	
+    text-align: center;
+    padding: 3% 0 3% 0;
+    border-top: 1px solid #DADADA;
+
 }

@@ -1,3 +1,26 @@
+#Comentários da Fê
+
+* Instruções sobre como executar
+
+	* Instalar o Node JS (https://nodejs.org/en/)
+	* Pelo terminal, se dirigir ao diretório do projeto, executar o comando "npm install" (para instalar as dependências)
+	* Pelo terminal, executar o comando "node app" (ou "nodemon app" - monitora as alterações na aplicação e "reseta" o servidor automaticamente)
+	* localhost:3000
+
+* Sobre o que foi feito
+
+	A home versão desktop está pronta e também um "esboço" de back no NodeJS, que era para poder cuidar das requisições ao data.json e também do redirecionamento de páginas, etc.
+	No geral, busquei me basear nas orientações desse guia: https://cssguidelin.es/. Achei ele bem interessante. Um ponto forte que tive como guia foi tentar escrever o CSS com vários componentes "genéricos" que podem ser reutilizados em diferentes contextos.
+	O CSS foi organizado em único arquivo ( :( ), mas dividido por sessões. Também dividi os componentes "genéricos" em "structure" (voltados ao layout, disposição, etc) e "skin" (voltados a cores, fontes, etc.).
+
+* Sobre o que pode melhorar
+
+	Busquei estudar bastante sobre boas práticas no front, então sei que há muito a ser melhorado na organização do CSS, talvez usar SASS fosse uma opção melhor, mas, com certeza, dividir os arquivos em componentes e áreas específicas.
+	Também teria que compor o css e o html de forma mais elegante, buscando ao máximo estruturar objetos que possam ser reutilizados no CSS.
+	(terminar o restante da aplicação seria legal também... hahahaha)
+
+Obrigada!
+
 # Quer trabalhar com front-end em nosso time?
 
 Esse é o nosso desafio para você!
